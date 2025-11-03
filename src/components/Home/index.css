@@ -1,0 +1,308 @@
+.home-container {
+  background-color: #f5f7fa;
+  min-height: 95vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-content-container {
+  display: flex;
+  width: 85%;
+  padding: 20px 0px;
+  flex-direction: column;
+  @media (max-width: 767px) {
+    padding: 10px 0px;
+    width: 100%;
+  }
+}
+
+.home-heading {
+  font-family: Inter;
+  font-weight: 600;
+  font-style: Semi Bold;
+  font-size: 40px;
+  line-height: 64px;
+  letter-spacing: 0px;
+  vertical-align: middle;
+  margin-bottom: 10px;
+  color: #1e293b;
+  margin-top: 0px;
+
+  @media (max-width: 767px) {
+    font-size: 20px;
+    line-height: 32px;
+    padding: 0px 20px;
+  }
+}
+
+.home-para {
+  font-family: Inter;
+  margin-top: 0px;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0px;
+  vertical-align: middle;
+  width: 80%;
+  color: #475569;
+
+  @media (max-width: 767px) {
+    font-size: 14px;
+    line-height: 24px;
+    width: 100%;
+    padding: 0px 20px;
+  }
+}
+
+.top-rated-container {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 2px 0px #60617029;
+  border-radius: 15px;
+
+  @media (max-width: 767px) {
+    padding: 20px;
+    border-radius: 0px;
+  }
+}
+
+.top-rated-books-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.top-rated-heading {
+  font-family: Inter;
+  font-weight: 600;
+  font-style: Semi Bold;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 0px;
+  color: #1e293b;
+
+  @media (max-width: 767px) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.find-books-button {
+  width: 104px;
+  height: 36px;
+  background-color: #0284c7;
+  opacity: 1;
+  border-radius: 4px;
+  border: none;
+  color: #ffffff;
+  gap: 8px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+  outline: none;
+  padding-left: 20px;
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.find-books-button2 {
+  display: none;
+  width: 104px;
+  height: 36px;
+  background-color: #0284c7;
+  opacity: 1;
+  border-radius: 4px;
+  font-size: 12px;
+  border: none;
+  color: #ffffff;
+  gap: 8px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+  outline: none;
+  padding-left: 20px;
+  @media (max-width: 767px) {
+    display: flex;
+    margin: 0px 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.slick-container {
+  position: relative;
+  overflow: visible;
+  width: 100%;
+
+  margin-top: 20px;
+
+  @media (max-width: 767px) {
+    margin-top: 10px;
+  }
+}
+
+.slick-prev,
+.slick-next {
+  width: 32px;
+  height: 32px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+.top-book-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+.top-book-cover {
+  height: 400px;
+  top: 409px;
+  left: 171px;
+  width: 100%;
+  opacity: 1;
+  border-radius: 4px;
+
+  @media (max-width: 767px) {
+    height: 200px;
+    width: 146px;
+  }
+}
+
+.top-book-title {
+  font-family: Inter;
+  font-weight: 600;
+  font-style: Semi Bold;
+  font-size: 24px;
+  margin-bottom: 0px;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #334155;
+
+  @media (max-width: 767px) {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+.top-book-author {
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  margin: 0px;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #64748b;
+
+  @media (max-width: 767px) {
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
+
+.slick-list {
+  margin: 0px 10px;
+}
+
+.slick-slide {
+  padding: 0px 18px;
+  @media (max-width: 767px) {
+    padding: 0px 10px;
+  }
+}
+
+.loader-container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 160px;
+}
+
+.failure-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.failure-img {
+  width: 346.9999084472656px;
+  height: 170.001708984375px;
+  top: 419px;
+  left: 547px;
+  opacity: 1;
+
+  @media (max-width: 767px) {
+    width: 237.99960327148438px;
+    height: 117.15686798095703px;
+    top: 204.85px;
+    left: 61px;
+    angle: 0 deg;
+    opacity: 1;
+  }
+}
+
+.failure-para {
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  color: #475569;
+  line-height: 24px;
+  letter-spacing: 0%;
+
+  @media (max-width: 767px) {
+    font-family: Inter;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 12px;
+    leading-trim: NONE;
+    line-height: 16px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+}
+
+.failure-button {
+  width: 75px;
+  height: 32px;
+  background-color: #0284c7;
+  opacity: 1;
+  border-radius: 8px;
+  gap: 5.33px;
+  padding-top: 8px;
+  padding-right: 12px;
+  padding-bottom: 8px;
+  padding-left: 12px;
+  border: none;
+  color: white;
+  font-size: 10px;
+
+  @media (max-width: 767px) {
+    width: 87;
+    height: 32;
+    angle: 0 deg;
+    opacity: 1;
+    border-radius: 8px;
+    gap: 8px;
+    font-size: 10px;
+  }
+}

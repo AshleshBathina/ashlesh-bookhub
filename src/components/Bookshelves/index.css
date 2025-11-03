@@ -1,0 +1,373 @@
+.shelf-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: 100%;
+  background-color: #f5f7fa;
+  align-items: center;
+}
+
+.shelf-content-container {
+  width: 80%;
+  display: flex;
+  padding-top: 40px;
+  height: 100%;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    width: 100%;
+    padding: 30px;
+  }
+}
+
+.shelf-sidebar {
+  background-color: #ffffff;
+  width: 256px;
+  height: 100vh;
+  padding: 30px;
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  margin-right: 30px;
+
+  @media (max-width: 767px) {
+    height: 100%;
+    background-color: transparent;
+    padding: 0px;
+    width: 100%;
+    display: none;
+  }
+}
+
+.shelf-sidebar1 {
+  background-color: #ffffff;
+  width: 256px;
+  height: 100vh;
+  padding: 30px;
+
+  flex-shrink: 0;
+  flex-direction: column;
+  margin-right: 30px;
+  display: none;
+
+  @media (max-width: 767px) {
+    height: 100%;
+    background-color: transparent;
+    padding: 0px;
+    width: 100%;
+    display: flex;
+  }
+}
+
+.sidebar-heading {
+  font-family: Inter;
+  font-weight: 600;
+  font-style: Semi Bold;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0%;
+  color: #334155;
+  margin: 0px;
+
+  @media (max-width: 767px) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 15px;
+  }
+}
+
+.sidebar-options-list {
+  list-style-type: none;
+  padding-left: 0px;
+  margin-top: 0px;
+  width: 100%;
+
+  @media (max-width: 767px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-right: 0px;
+  }
+}
+
+.sidebar-option-item {
+  margin: 5px 0px;
+
+  @media (max-width: 767px) {
+    margin-right: 13px;
+    margin-bottom: 10px;
+  }
+}
+
+.sidebar-option {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  color: #475569;
+  line-height: 24px;
+  letter-spacing: 0px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background-color: transparent;
+
+  @media (max-width: 767px) {
+    border: 1px solid #0284c7;
+    padding: 4px 13px;
+    border-radius: 25px;
+    color: #0284c7;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+.active-shelf {
+  color: #0284c7;
+  font-weight: 600;
+
+  @media (max-width: 767px) {
+    color: #ffffff;
+    font-weight: 500;
+    background-color: #0284c7;
+  }
+}
+
+.main-shelf-container {
+  display: flex;
+  flex-direction: column;
+
+  flex-grow: 1;
+}
+
+.shelf-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.shelf-heading {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 18px;
+  color: #334155;
+  line-height: 100%;
+  letter-spacing: 0px;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.search-container {
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  width: 265px;
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 767px) {
+    display: flex;
+    margin-bottom: 20px;
+  }
+}
+
+.search-container1 {
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  width: 265px;
+  display: none;
+  align-items: center;
+
+  @media (max-width: 767px) {
+    display: flex;
+    margin-bottom: 20px;
+  }
+}
+
+.search-input {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 14px;
+  color: #94a3b8;
+  line-height: 24px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  border: none;
+  height: 34px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  padding: 0px 10px;
+  outline: none;
+}
+
+.search-button {
+  height: 34px;
+  width: 52px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #edeff1;
+  border-top-right-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  border-bottom-right-radius: 4px;
+}
+
+.books-container {
+  list-style-type: none;
+  padding-left: 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.book-container {
+  width: 50%;
+  margin-bottom: 20px;
+
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+}
+
+.book-content-container {
+  display: flex;
+  text-decoration: none;
+}
+
+.book-cover-image {
+  width: 133px;
+  height: 155px;
+  top: 197px;
+  left: 438px;
+
+  opacity: 1;
+  border-radius: 8px;
+}
+
+.book-details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
+.book-title {
+  font-family: Inter;
+  font-weight: 600;
+  font-style: Semi Bold;
+  font-size: 16px;
+  color: #334155;
+  line-height: 24px;
+  letter-spacing: 0px;
+  margin: 5px 0px;
+}
+
+.book-author {
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  color: #475569;
+  line-height: 16px;
+  letter-spacing: 0px;
+  margin: 5px 0px;
+}
+
+.book-rating {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 12px;
+  color: #475569;
+  line-height: 16px;
+  letter-spacing: 0px;
+  margin: 5px 0px;
+}
+
+.book-status {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 12px;
+  color: #475569;
+  line-height: 16px;
+  letter-spacing: 0px;
+  margin: 5px 0px;
+}
+
+span {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 12px;
+  color: #0284c7;
+  line-height: 16px;
+  letter-spacing: 0px;
+  margin: 5px 0px;
+}
+
+.foot-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+
+  @media (max-width: 767px) {
+    height: 50vh;
+  }
+}
+
+.no-result-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  @media (max-width: 767px) {
+    height: 50vh;
+  }
+}
+
+.no-result-img {
+  width: 476px;
+  height: 327px;
+  top: 310px;
+  left: 682px;
+
+  opacity: 1;
+
+  @media (max-width: 767px) {
+    width: 257px;
+    height: 176px;
+    top: 300px;
+    left: 51px;
+    angle: 0 deg;
+    opacity: 1;
+  }
+}
+
+.no-result-para {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 24px;
+  color: #334155;
+  line-height: 100%;
+  letter-spacing: 0%;
+
+  @media (max-width: 767px) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

@@ -1,0 +1,29 @@
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 145px;
+  margin-top: auto;
+}
+
+.icons-container {
+  display: flex;
+  align-items: center;
+  width: 145px;
+}
+
+.icon {
+  color: #3d3c3c;
+  margin: 0px 10px;
+}
+
+.contact-para {
+  color: #3d3c3c;
+
+  font-weight: 600;
+  font-size: 16px;
+
+  line-height: 24px;
+  letter-spacing: 0px;
+  margin-top: 10px;
+}

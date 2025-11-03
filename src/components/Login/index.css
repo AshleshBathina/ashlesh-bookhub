@@ -1,0 +1,151 @@
+* {
+  font-family: Inter;
+}
+
+.page-container {
+  height: 100vh;
+  display: flex;
+}
+
+.content-container {
+  display: flex;
+  width: 100%;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.left-container {
+  width: 55%;
+  @media (max-width: 767px) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+  }
+}
+
+.login-cover-img {
+  width: 100%;
+  height: 100%;
+  @media (max-width: 767px) {
+    border-radius: 150px;
+    width: 250px;
+    height: 250px;
+  }
+}
+
+.right-container {
+  background-color: #f8fafc;
+  height: 100%;
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 767px) {
+    width: 100%;
+    background-color: #ffffff;
+    align-items: flex-start;
+  }
+}
+
+.login-card {
+  background-color: #ffffff;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (max-width: 767px) {
+    padding: 20px;
+    width: 100%;
+  }
+}
+
+login-card-img-container {
+}
+
+.login-card-img {
+  width: 130px;
+  margin-bottom: 30px;
+  @media (max-width: 767px) {
+    width: 100px;
+    margin: 20px;
+  }
+}
+
+.inputs-container {
+  display: flex;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+}
+
+.label {
+  color: #5a7184;
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 15px;
+
+  @media (max-width: 767px) {
+    font-size: 15px;
+  }
+}
+
+.input {
+  width: 300px;
+  border: 1px solid #c3cad9;
+  color: #183b56;
+  font-size: 18px;
+  padding: 15px;
+  border-radius: 5px;
+  outline: none;
+
+  @media (max-width: 767px) {
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+  }
+}
+
+.login-button {
+  background-color: #0284c7;
+  border-radius: 5px;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 15px;
+  margin-top: 40px;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: Inter;
+
+  @media (max-width: 767px) {
+    padding: 13px;
+    font-size: 15px;
+    margin-top: 40px;
+  }
+}
+
+.login-error-msg {
+  color: #ef4444;
+  font-size: 13px;
+  align-self: flex-start;
+  margin: 0px;
+  margin-top: 5px;
+
+  @media (max-width: 767px) {
+    font-size: 12px;
+  }
+}
