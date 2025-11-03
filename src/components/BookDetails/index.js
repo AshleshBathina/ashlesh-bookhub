@@ -87,30 +87,36 @@ class BookDetails extends Component {
     switch (apiStatus) {
       case apiStatusConstants.success:
         return (
-          <div className="book-details-content">
-            <div className="book-container1">
-              <img className="book-cover-image1" src={coverPic} alt={title}/>
-              <div className="book-details1">
-                <h1 className="book-title1">{title}</h1>
-                <p className="book-author1">{authorName}</p>
-                <p className="book-rating1">
-                  Avg Rating <BsFillStarFill color="#FBBF24" /> {rating}
-                </p>
-                <p className="book-status1">
-                  Status: <span className="status">{readStatus}</span>
-                </p>
+          <>
+            <div className="book-details-content">
+              <div className="book-container1">
+                <img className="book-cover-image1" src={coverPic} alt={title} />
+                <div className="book-details1">
+                  <h1 className="book-title1">{title}</h1>
+                  <p className="book-author2">{authorName}</p>
+                  <p className="book-rating1">
+                    Avg Rating <BsFillStarFill color="#FBBF24" /> {rating}
+                  </p>
+                  <p className="book-status2">
+                    Status: <span className="status">{readStatus}</span>
+                  </p>
+                </div>
+              </div>
+
+              <hr />
+
+              <div className="abouts">
+                <h1 className="about">About Author</h1>
+                <p className="about-desc">{aboutAuthor}</p>
+                <h1 className="about">About Book</h1>
+                <p className="about-desc">{aboutBook}</p>
               </div>
             </div>
 
-            <hr />
-
-            <div className="abouts">
-              <h1 className="about">About Author</h1>
-              <p className="about-desc">{aboutAuthor}</p>
-              <h1 className="about">About Book</h1>
-              <p className="about-desc">{aboutBook}</p>
+            <div className="foot-container">
+              <Footer />
             </div>
-          </div>
+          </>
         )
       case apiStatusConstants.failure:
         return (
@@ -144,9 +150,6 @@ class BookDetails extends Component {
       <div className="book-details-container">
         <Header />
         {this.loadBookDetails()}
-        <div className="foot-container">
-          <Footer />
-        </div>
       </div>
     )
   }

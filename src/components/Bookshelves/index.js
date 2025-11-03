@@ -126,33 +126,38 @@ class Bookshelves extends Component {
     switch (apiStatus) {
       case apiStatusConstants.success:
         return (
-          <ul className="books-container">
-            {books.map(book => (
-              <li key={book.id} className="book-container">
-                <Link
-                  className="book-content-container"
-                  to={`books/${book.id}`}
-                >
-                  <img
-                    className="book-cover-image"
-                    src={book.coverPic}
-                    alt={book.title}
-                  />
-                  <div className="book-details">
-                    <h1 className="book-title">{book.title}</h1>
-                    <p className="book-author">{book.authorName}</p>
-                    <p className="book-rating">
-                      Avg Rating <BsFillStarFill color="#FBBF24" />{' '}
-                      {book.rating}
-                    </p>
-                    <p className="book-status">
-                      Status: <span>{book.readStatus}</span>
-                    </p>
-                  </div>
-                </Link>
-              </li>
-            ))}
-          </ul>
+          <>
+            <ul className="books-container">
+              {books.map(book => (
+                <li key={book.id} className="book-container">
+                  <Link
+                    className="book-content-container"
+                    to={`books/${book.id}`}
+                  >
+                    <img
+                      className="book-cover-image"
+                      src={book.coverPic}
+                      alt={book.title}
+                    />
+                    <div className="book-details">
+                      <h1 className="book-title">{book.title}</h1>
+                      <p className="book-author">{book.authorName}</p>
+                      <p className="book-rating">
+                        Avg Rating <BsFillStarFill color="#FBBF24" />{' '}
+                        {book.rating}
+                      </p>
+                      <p className="book-status">
+                        Status: <span>{book.readStatus}</span>
+                      </p>
+                    </div>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <div className="foot-container">
+              <Footer />
+            </div>
+          </>
         )
       case apiStatusConstants.noResult:
         return (
@@ -259,9 +264,6 @@ class Bookshelves extends Component {
             </div>
 
             {this.loadBooks()}
-            <div className="foot-container">
-              <Footer />
-            </div>
           </div>
         </div>
       </div>
