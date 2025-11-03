@@ -115,6 +115,8 @@ class Login extends Component {
               <button className="login-button" type="submit">
                 Login
               </button>
+              <p className="idp">username: rahul <br/> password: rahul@2021</p>
+
             </form>
           </div>
         </div>
